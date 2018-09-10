@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F12E1BD82146F67F00314D34 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12E1BD72146F67F00314D34 /* LoginViewController.swift */; };
+		F12E1BDA21470A7100314D34 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12E1BD921470A7100314D34 /* SignUpViewController.swift */; };
+		F12E1BDC2147306200314D34 /* CloudTrackerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12E1BDB2147306200314D34 /* CloudTrackerManager.swift */; };
 		F1F502232144795800F3CE3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F502222144795800F3CE3C /* AppDelegate.swift */; };
 		F1F502252144795800F3CE3C /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F502242144795800F3CE3C /* MealViewController.swift */; };
 		F1F502282144795800F3CE3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F502262144795800F3CE3C /* Main.storyboard */; };
@@ -30,6 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F12E1BD72146F67F00314D34 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F12E1BD921470A7100314D34 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F12E1BDB2147306200314D34 /* CloudTrackerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudTrackerManager.swift; sourceTree = "<group>"; };
 		F1F5021F2144795800F3CE3C /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F502222144795800F3CE3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1F502242144795800F3CE3C /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +96,9 @@
 				F1F502422144E33700F3CE3C /* RatingControl.swift */,
 				F1F502442144FCB400F3CE3C /* Meal.swift */,
 				F1F502262144795800F3CE3C /* Main.storyboard */,
+				F12E1BD72146F67F00314D34 /* LoginViewController.swift */,
+				F12E1BD921470A7100314D34 /* SignUpViewController.swift */,
+				F12E1BDB2147306200314D34 /* CloudTrackerManager.swift */,
 				F1F5024821450D1600F3CE3C /* MealTableViewController.swift */,
 				F1F50246214507EA00F3CE3C /* MealTableViewCell.swift */,
 				F1F502292144795A00F3CE3C /* Assets.xcassets */,
@@ -211,7 +220,10 @@
 			files = (
 				F1F502452144FCB400F3CE3C /* Meal.swift in Sources */,
 				F1F502252144795800F3CE3C /* MealViewController.swift in Sources */,
+				F12E1BDA21470A7100314D34 /* SignUpViewController.swift in Sources */,
+				F12E1BDC2147306200314D34 /* CloudTrackerManager.swift in Sources */,
 				F1F502432144E33700F3CE3C /* RatingControl.swift in Sources */,
+				F12E1BD82146F67F00314D34 /* LoginViewController.swift in Sources */,
 				F1F502232144795800F3CE3C /* AppDelegate.swift in Sources */,
 				F1F5024921450D1600F3CE3C /* MealTableViewController.swift in Sources */,
 				F1F50247214507EA00F3CE3C /* MealTableViewCell.swift in Sources */,

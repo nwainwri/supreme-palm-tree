@@ -126,14 +126,12 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     let photo = photoImageView.image
     let rating = ratingControl.rating
     
-    
       // Set the meal to be passed to MealTableViewController after the unwind segue.
     meal = Meal(name: name, photo: photo, rating: rating)
     
   }
   
   //MARK: Actions
-
   @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
     // Hide the keyboard.
     nameTextField.resignFirstResponder()
@@ -148,8 +146,6 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     imagePickerController.delegate = self
     
     present(imagePickerController, animated: true, completion: nil)
-    
-    
     
   }
   

@@ -21,18 +21,25 @@ class Meal: NSObject, NSCoding {
   
   //MARK: Types
   
+//  calories: Int
+//  description: String
+  
   struct PropertyKey {
     static let name = "name"
     static let photo = "photo"
     static let rating = "rating"
+    static let calories = "calories"
+    static let mealDescription = "mealDescription"
   }
   
   var name: String
   var photo: UIImage?
   var rating: Int
+  var calories: Int
+  var mealDescription: String
   
   //MARK: Initializatio
-  init?(name: String, photo: UIImage?, rating: Int) {
+  init?(name: String, photo: UIImage?, rating: Int, calories: Int, mealDescription: String) {
     
     // The name must not be empty
     guard !name.isEmpty else {
@@ -49,6 +56,8 @@ class Meal: NSObject, NSCoding {
     self.name = name
     self.photo = photo
     self.rating = rating
+    self.calories = calories
+    self.mealDescription = mealDescription
   }
   
   //MARK: NSCoding
@@ -56,6 +65,9 @@ class Meal: NSObject, NSCoding {
     aCoder.encode(name, forKey: PropertyKey.name)
     aCoder.encode(photo, forKey: PropertyKey.photo)
     aCoder.encode(rating, forKey: PropertyKey.rating)
+    aCoder.encode(calories, forKey: PropertyKey.calories)
+    aCoder.encode(mealDescription, forKey: PropertyKey.mealDescription)
+    
   }
   required convenience init?(coder aDecoder: NSCoder) {
     
@@ -71,7 +83,8 @@ class Meal: NSObject, NSCoding {
     let rating = aDecoder.decodeInteger(forKey: PropertyKey.rating)
     
     // Must call designated initializer.
-    self.init(name: name, photo: photo, rating: rating)
+//    self.init(name: name, photo: photo, rating: rating)
+    self.init(name: name, photo: photo, rating: rating, calories: calories, mealDescription: mealDescription)
     
   }
   
